@@ -83,7 +83,7 @@ option(LLAMA_BUILD_SERVER               "llama: build server example"           
 # Generate initial build-info.h
 include(${CMAKE_CURRENT_SOURCE_DIR}/scripts/build-info.cmake)
 
-if(EXISTS "/Users/benconway/Documents/GitHub/pyllamacpp/llama.cpp/scripts/build-info.h.in")
+if(EXISTS "/Users/benconway/Documents/GitHub/llama.cpp/scripts/build-info.h.in")
     # Add a custom target for build-info.h
     add_custom_target(BUILD_INFO ALL DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/build-info.h")
 
